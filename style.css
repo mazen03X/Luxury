@@ -82,7 +82,7 @@ body {
     .bottom {
         flex-direction: column; /* Stack items on small screens */
     }
-
+    body{    background-size: 100% 100%;}
     .bottom-right, .bottom-left {
         width: 100%;
         height: 100px;
