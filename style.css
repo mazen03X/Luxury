@@ -1,9 +1,16 @@
+
+
+
+
+
 .mainContainer{
    
     width: 600px;
     margin: auto;
 
 }
+
+
 .top
 {
     position: relative;
@@ -39,7 +46,7 @@ h1{
   font-weight: 800;
 }
 button{
-    width: 300px;
+    width: 400px;
     height: 40px;
     background-color: antiquewhite;
 }
@@ -54,4 +61,26 @@ body{
     margin: 0;
     width: 100vw;
     height: 100vh;
+}
+
+@media (max-width: 400px) {
+  .mainContainer{
+        width: 100%;
+
+  }
+  button{
+    width: 100%;
+  }
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .top{
+    width: 100%;
+  }
+  .bottom{
+    width: 100%;
+  }
+  
 }
