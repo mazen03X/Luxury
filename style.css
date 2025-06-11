@@ -2,6 +2,7 @@
     width: 90%; /* Adjusted for better responsiveness */
     max-width: 600px;
     margin: auto;
+
 }
 
 .top {
@@ -38,8 +39,7 @@ h1 {
 }
 
 button {
-    width: 100%;
-    max-width: 400px;
+    width: 25%;
     height: 40px;
     background-color: antiquewhite;
 }
@@ -50,7 +50,7 @@ button:hover {
 }
 
 body {
-    background-image: url('https://www.freevector.com/uploads/vector/preview/87292/vecteezybackground-abstract-blackby1222_generated.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/952/084/original/black-gold-luxury-background-premium-background-free-vector.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -63,8 +63,12 @@ body {
     .mainContainer {
         width: 100%;
         padding: 10px; /* Adds breathing space */
+                height: 100vh;
+
     }
-    
+    h1{
+         font-size:large;
+    }
     .top {
         width: 100%;
         height: auto; /* Adjust height dynamically */
@@ -77,10 +81,11 @@ body {
 
     .bottom-right, .bottom-left {
         width: 100%;
-        height: auto;
+        height: 100px;
+        flex: none;
     }
 
     button {
-        width: 100%; /* Full width on smaller screens */
+        width: 25%; /* Full width on smaller screens */
     }
 }
