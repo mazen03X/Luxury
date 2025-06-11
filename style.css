@@ -1,86 +1,86 @@
-
-
-
-
-
-.mainContainer{
-   
-    width: 600px;
+.mainContainer {
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 600px;
     margin: auto;
-
 }
 
-
-.top
-{
+.top {
     position: relative;
     background-color: rgba(115, 105, 93, 0.411);
     height: 300px;
     margin: 5px;
-    
 }
-.bottom{
-    
-    background-color: rgba(250, 235, 215, 0.334);
-        display: flex;
 
+.bottom {
+    background-color: rgba(250, 235, 215, 0.334);
+    display: flex;
+    flex-wrap: wrap; /* Ensures flexibility on smaller screens */
 }
-.bottom-right, .bottom-left{
+
+.bottom-right, .bottom-left {
     flex: 1;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.176);
     margin: 4px;
-
 }
 
-.Hidden{
+.Hidden {
     display: none;
 }
-h1{
-   
-     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  font-weight: 800;
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 800;
 }
-button{
-    width: 400px;
+
+button {
+    width: 100%;
+    max-width: 400px;
     height: 40px;
     background-color: antiquewhite;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
-    opacity: .8;
+    opacity: 0.8;
 }
-body{
+
+body {
     background-image: url('https://www.freevector.com/uploads/vector/preview/87292/vecteezybackground-abstract-blackby1222_generated.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     width: 100vw;
     height: 100vh;
 }
 
-@media (max-width: 400px) {
-  .mainContainer{
+/* Responsive Design */
+@media (max-width: 600px) {
+    .mainContainer {
         width: 100%;
+        padding: 10px; /* Adds breathing space */
+    }
+    
+    .top {
+        width: 100%;
+        height: auto; /* Adjust height dynamically */
+        padding: 20px;
+    }
 
-  }
-  button{
-    width: 100%;
-  }
-  body{
-    width: 100vw;
-    height: 100vh;
-  }
+    .bottom {
+        flex-direction: column; /* Stack items on small screens */
+    }
 
-  .top{
-    width: 100%;
-  }
-  .bottom{
-    width: 100%;
-  }
-  
+    .bottom-right, .bottom-left {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
