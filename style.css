@@ -8,8 +8,11 @@
 .top {
     position: relative;
     background-color: rgba(115, 105, 93, 0.411);
-    height: 300px;
+    height: 200px;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 p{margin: 0;}
 .bottom {
@@ -30,10 +33,11 @@ p{margin: 0;}
 }
 
 h1 {
-    position: absolute;
+    /*position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+   */ 
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
