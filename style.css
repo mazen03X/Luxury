@@ -56,7 +56,7 @@ button:hover {
 
 body {
     background-image: url('https://static.vecteezy.com/system/resources/previews/010/952/084/original/black-gold-luxury-background-premium-background-free-vector.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0;
     width: 100vw;
